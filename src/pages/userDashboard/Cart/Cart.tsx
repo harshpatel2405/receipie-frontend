@@ -12,8 +12,8 @@ type CartItem = {
     pid: string;
     productName: string;
     productPhotoUrl: string;
-    productSize: string;
-    productColor: string;
+    // productSize: string;
+    // productColor: string;
     productPrice: number;
     cartCount: number;
 };
@@ -125,7 +125,7 @@ export default function Cart() {
                                                 />
                                                 <div>
                                                     <h3 className="font-medium text-lg">{item.productName}</h3>
-                                                    <div className="text-sm ">
+                                                    {/*<div className="text-sm ">
                                                         <span className="font-bold mr-1">
                                                             Size:
                                                         </span>
@@ -136,7 +136,7 @@ export default function Cart() {
                                                             Color:
                                                         </span>
                                                         {item.productColor.toUpperCase()}
-                                                    </div>
+                                                    </div>*/}
                                                 </div>
                                                 <div className="flex items-center gap-2">
                                                     <Button

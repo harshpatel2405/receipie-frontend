@@ -8,10 +8,13 @@ function Footer() {
                 <div className="space-y-4">
                     <div className="flex items-center space-x-2">
                         <img src={Logo} className="w-14" alt="Logo" />
-                        <span className="text-lg font-bold text-primary">Trendy Closet</span>
+                        <span className="text-lg font-bold text-primary">receiPIE</span>
                     </div>
                     <p className="text-sm leading-relaxed text-justify">
-                        Trendy Closet is your ultimate destination for fashionable and high-quality t-shirts. We specialize in providing a wide range of trendy designs, sizes, and colors to suit every style. Whether you're looking for casual wear or something unique, we've got you covered. Shop with us for premium quality, exceptional customer service, and the latest in t-shirt fashion.
+                        {/* Trendy Closet is your ultimate destination for fashionable and high-quality t-shirts. We specialize in providing a wide range of trendy designs, sizes, and colors to suit every style. Whether you're looking for casual wear or something unique, we've got you covered. Shop with us for premium quality, exceptional customer service, and the latest in t-shirt fashion. */}
+                        "At receiPIE, we bake with love and the finest ingredients to bring you fresh, delicious treats every day. From our oven to your table, we’re committed to making your moments sweeter. Whether you're celebrating a special occasion or simply indulging your sweet tooth, we're here to add a little joy to your day. Visit us in-store or order online, and let us be a part of your sweet journey."
+
+
                     </p>
                 </div>
                 <div></div>

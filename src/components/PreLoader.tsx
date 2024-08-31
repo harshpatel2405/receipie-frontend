@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import logo from "../assets/logo.png"
 function PreLoader() {
 
     return (
@@ -18,7 +18,8 @@ function PreLoader() {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.5 }}
                 className="mt-6 text-xl md:text-3xl font-mono font-semibold">
-                👋 Welcome to Trendy Closet
+                {/* 👋 Welcome to Trendy Closet */}
+               <img src={logo} alt=""  width={300}/>
             </motion.div>
 
         </motion.div>

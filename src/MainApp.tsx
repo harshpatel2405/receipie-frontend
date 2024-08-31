@@ -55,7 +55,7 @@ function MainApp() {
     <Router>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Trendy Closet </title>
+        <title>receiPIE</title>
         <meta name="description" content="Welcome to Trendy Closet. We provide web development, software development, UI/UX design, and IT consulting services." />
         <meta name="keywords" content="Trendy Closet, web development, software development, UI/UX design, IT consulting" />
         <meta name="author" content="Trendy Closet" />

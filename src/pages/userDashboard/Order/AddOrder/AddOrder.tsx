@@ -11,8 +11,8 @@ type CartItem = {
   pid: string;
   productName: string;
   productPhotoUrl: string;
-  productSize: string;
-  productColor: string;
+  // productSize: string;
+  // productColor: string;
   productPrice: number;
   cartCount: number;
 };
@@ -102,7 +102,7 @@ export default function AddOrder() {
                           />
                           <div>
                             <h3 className="font-medium">{item.productName}</h3>
-                            <p className="text-muted-foreground">Color: {item.productColor.toUpperCase()} | Size: {item.productSize.toUpperCase()}</p>
+                            {/* <p className="text-muted-foreground">Color: {item.productColor.toUpperCase()} | Size: {item.productSize.toUpperCase()}</p> */}
                           </div>
                         </div>
                         <div className="text-lg font-medium">₹{(item.productPrice * item.cartCount).toFixed(2)}</div>

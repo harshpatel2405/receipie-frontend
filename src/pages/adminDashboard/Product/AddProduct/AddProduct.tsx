@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
+// import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
 import { toast } from "@/components/ui/use-toast";
@@ -65,8 +65,8 @@ export default function AddProduct() {
         description: formData.get("description"),
         totalStock,
         currentStock: totalStock,
-        size: formData.get("size"),
-        color: formData.get("color"),
+        // size: formData.get("size"),
+        // color: formData.get("color"),
         price: formData.get("price"),
         photoUrl
       };
@@ -123,8 +123,8 @@ export default function AddProduct() {
             <Input id="currentStock" name="currentStock" type="number" value={totalStock} disabled required />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="grid gap-2">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> 
+          <div className="grid gap-2"> 
             <Label htmlFor="size">Size</Label>
             <Select name="size">
               <SelectTrigger>
@@ -150,7 +150,7 @@ export default function AddProduct() {
               </SelectContent>
             </Select>
           </div>
-        </div>
+        </div>*/}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="grid gap-2">
             <Label htmlFor="price">Price</Label>

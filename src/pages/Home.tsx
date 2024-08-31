@@ -54,12 +54,12 @@ function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
         <div className="relative h-full flex flex-col items-center justify-center px-4 md:px-6 text-center space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tighter">
-            Discover the Perfect Product
+            Get the best pies....
           </h1>
           <p className="max-w-md text-muted-foreground">
-            Explore our curated collection of high-quality products that will elevate your lifestyle.
+            Get the pie's today and enjoyyy!!
           </p>
-          <Button className="px-8">Shop Now</Button>
+          <Button className="px-8">Order Now!</Button>
         </div>
       </section>
 
@@ -86,7 +86,7 @@ function Home() {
                         <h3 className="text-lg font-semibold">{product.name}</h3>
                         <p className="text-muted-foreground line-clamp-2">{product.description}</p>
                         <div className="flex items-center justify-between">
-                          <span className="text-lg font-bold">₹{product.price}</span>
+                          <span className="text-lg font-bold">${product.price}</span>
                           <Link to={`products/${product._id}`} >
                             <Button variant={"outline"}>
                               View More
@@ -108,7 +108,7 @@ function Home() {
       </section>
 
       {/* Product Gallery Section */}
-      <section className="py-12 md:py-16 lg:py-20">
+      {/* <section className="py-12 md:py-16 lg:py-20">
         <div className="container">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">Product Gallery</h2>
           <Carousel plugins={[Autoplay({ delay: 2000 })]}>
@@ -140,7 +140,7 @@ function Home() {
             </CarouselContent>
           </Carousel>
         </div>
-      </section>
+      </section> */}
 
       {/* Customer Reviews Section */}
       <section className="py-12 md:py-16 lg:py-20 ">

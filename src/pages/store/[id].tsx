@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { ShirtIcon } from "lucide-react";
-import { Drop, Scissor } from "iconsax-react";
+import { CakeIcon, Cookie, MilkIcon } from "lucide-react";
+// import { Drop, Scissor } from "iconsax-react";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -10,8 +10,8 @@ import { toast } from "@/components/ui/use-toast";
 type Product = {
     name: string;
     description: string;
-    size: string;
-    color: string;
+    // size: string;
+    // color: string;
     price: number;
     photoUrl: string;
     totalStock: number;
@@ -69,8 +69,8 @@ export default function Products() {
                     pid: id,
                     productName: product.name,
                     productPhotoUrl: product.photoUrl,
-                    productSize: product.size,
-                    productColor: product.color,
+                    // productSize: product.size,
+                    // productColor: product.color,
                     productPrice: product.price,
                     cartCount: 1,
                 },
@@ -117,30 +117,30 @@ export default function Products() {
                             <div className="grid gap-2">
                                 <div className="text-4xl font-bold">₹ {product.price}</div>
                             </div>
-                            <div className="text-base">
+                            {/* <div className="text-base">
                                 <span className="font-bold mr-1">Color:</span>
                                 {product.color.toUpperCase()}
                             </div>
                             <div className="text-base">
                                 <span className="font-bold mr-1">Size:</span>
                                 {product.size.toUpperCase()}
-                            </div>
+                            </div> */}
                             <Button size="lg" onClick={handleAddToCart}>Add to Cart</Button>
                             <Separator />
                             <div className="grid gap-4 text-sm leading-loose">
                                 <h2 className="font-bold text-lg">Product Details</h2>
                                 <div className="grid gap-2">
                                     <div className="flex items-center gap-2">
-                                        <ShirtIcon className="w-5 h-5 text-muted-foreground" />
-                                        <span>100% Organic Cotton</span>
+                                        <MilkIcon className="w-5 h-5 text-muted-foreground" />
+                                        <span>100% good quality</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <Scissor className="w-5 h-5 text-muted-foreground" />
+                                        <Cookie className="w-5 h-5 text-muted-foreground" />
                                         <span>Ethically Sourced</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <Drop className="w-5 h-5 text-muted-foreground" />
-                                        <span>Machine Washable</span>
+                                        <CakeIcon className="w-5 h-5 text-muted-foreground" />
+                                        <span>Must Eat !!!</span>
                                     </div>
                                 </div>
                             </div>

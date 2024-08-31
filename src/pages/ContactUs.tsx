@@ -7,7 +7,7 @@ function ContactUs() {
   return (
     <div>
       <Helmet>
-        <title>Contact Us | Trendy Closet</title>
+        <title>Contact Us | receiPIE</title>
         <meta name="description" content="Get in touch with Trendy Closet for inquiries, collaborations, or to discuss your project needs in web development, software development, UI/UX design, or IT consulting." />
         <meta name="keywords" content="Trendy Closet, Contact Us, web development, software development, UI/UX design, IT consulting" />
         <meta name="author" content="Trendy Closet" />
@@ -54,7 +54,7 @@ function ContactUs() {
               transition={{ duration: 1 }}
               className="space-y-4"
             >
-              <h2 className="text-2xl font-bold">Trendy Closet </h2>
+              <h2 className="text-2xl font-bold">receiPIE </h2>
               <div className="space-y-2">
                 <div className="flex items-start gap-4">
                   <div>
@@ -65,7 +65,7 @@ function ContactUs() {
 
                 <div className="flex items-start gap-4">
                   <div>
-                    <a href="#" className="font-medium" target="_blank">trendycloset@example.com</a>
+                    <a href="#" className="font-medium" target="_blank">daily@receipie.com</a>
                     <p className="text-gray-500 dark:text-gray-400">Get in touch via email</p>
                   </div>
                 </div>

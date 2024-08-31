@@ -59,79 +59,79 @@ const Header: React.FC = () => {
   // Determine which navigation items to display based on auth status and role
   let navItems: React.ReactNode[] = [];
   let bgColor = 'bg-background';
-  let textColor = 'text-foreground';
+  // let textColor = 'text-foreground';
 
   if (isAuthenticated && role === 'admin') {
     bgColor = 'bg-background';
-    textColor = 'text-foreground';
+    // textColor = 'text-foreground';
     navItems = [
       <NavItem to="/" currentPath={location.pathname} onClick={closeMenu} key="home">
-        <Home variant="Bulk" />
+        {/* <Home variant="Bulk" /> */}
         Home
       </NavItem>,
       <NavItem to="/store" currentPath={location.pathname} onClick={closeMenu} key="store">
-        <Shop variant="Bulk" />
+        {/* <Shop variant="Bulk" /> */}
         Store
       </NavItem>,
       <NavItem to="/aboutus" currentPath={location.pathname} onClick={closeMenu} key="aboutus">
-        <Building variant="Bulk" />
+        {/* <Building variant="Bulk" /> */}
         About Us
       </NavItem>,
       <NavItem to="/contactus" currentPath={location.pathname} onClick={closeMenu} key="contactus">
-        <Call variant="Bulk" />
+        {/* <Call variant="Bulk" /> */}
         Contact Us
       </NavItem>,
       <NavItem to="/admin/dashboard" currentPath={location.pathname} onClick={closeMenu} key="dashboard">
-        <Category variant="Bulk" />
+        {/* <Category variant="Bulk" /> */}
         Dashboard
       </NavItem>,
       <NavItem to="/admin/dashboard/product" currentPath={location.pathname} onClick={closeMenu} key="product">
-        <Shop variant='Bulk' />
+        {/* <Shop variant='Bulk' /> */}
         Product
       </NavItem>,
       <NavItem to="/admin/dashboard/order" currentPath={location.pathname} onClick={closeMenu} key="order">
-        <Box variant='Bulk' />
+        {/* <Box variant='Bulk' /> */}
         Order
       </NavItem>,
       <NavItem to="/admin/dashboard/reviews" currentPath={location.pathname} onClick={closeMenu} key="reviews">
-        <Book variant='Bulk' />
+        {/* <Book variant='Bulk' /> */}
         Reviews
       </NavItem>,
       <NavItem to="/admin/dashboard/contactformdata" currentPath={location.pathname} onClick={closeMenu} key="contact">
-        <Sms variant='Bulk' />
+        {/* <Sms variant='Bulk' /> */}
         Contact Data
       </NavItem>,
     ];
   } else if (isAuthenticated) {
     bgColor = 'bg-background';
-    textColor = 'text-foreground';
+    // textColor = 'text-foreground';
     navItems = [
       <NavItem to="/" currentPath={location.pathname} onClick={closeMenu} key="home">
-        <Home variant="Bulk" />
+        {/* <Home variant="Bulk" /> */}
         Home
       </NavItem>,
       <NavItem to="/store" currentPath={location.pathname} onClick={closeMenu} key="store">
-        <Shop variant="Bulk" />
+        {/* <Shop variant="Bulk" /> */}
         Store
       </NavItem>,
       <NavItem to="/aboutus" currentPath={location.pathname} onClick={closeMenu} key="aboutus">
-        <Building variant="Bulk" />
+        {/* <Building variant="Bulk" /> */}
         About Us
       </NavItem>,
       <NavItem to="/contactus" currentPath={location.pathname} onClick={closeMenu} key="contactus">
-        <Call variant="Bulk" />
+        {/* <Call variant="Bulk" /> */}
         Contact Us
       </NavItem>,
       <NavItem to="/user/dashboard" currentPath={location.pathname} onClick={closeMenu} key="dashboard">
-        <Category variant="Bulk" />
+        {/* <Category variant="Bulk" /> */}
         Dashboard
       </NavItem>,
       <NavItem to="/user/dashboard/order" currentPath={location.pathname} onClick={closeMenu} key="order">
-        <Box variant='Bulk' />
+        {/* <Box variant='Bulk' /> */}
         Order
       </NavItem>,
       <NavItem to="/user/dashboard/cart" currentPath={location.pathname} onClick={closeMenu} key="cart">
-        <Book variant='Bulk' />
+        {/* <Book variant='Bulk' /> */}
         Cart
       </NavItem>,
     ];
@@ -153,21 +153,21 @@ const Header: React.FC = () => {
   }
 
   return (
-    <div className={`w-full h-20 flex flex-wrap items-center ${bgColor} ${textColor} justify-between p-2 border-b-2 sticky top-0 z-10`}>
-      <div className="w-full flex items-center justify-between">
+    <div className={`w-full px-10 h-20 flex flex-wrap items-center  justify-center  sticky top-2  z-10`}>
+      <div className={`w-full flex items-center justify-between   backdrop-blur-md p-2 rounded-full border-2 border-black`}>
         <Link to="/">
-          <img src={LogoBlack} className="w-10 md:w-14" alt="Logo" />
+          <img src={LogoBlack} className="w-19 md:w-19" alt="Logo" />
         </Link>
         <ul className={`ml-4 space-x-4 hidden md:flex`}>
           {navItems}
         </ul>
         <div className='flex items-center gap-2'>
           {!isMobile && (
-            isAuthenticated ? <UserDialogButton /> : <><Link to={"/auth/login"}><Button variant={'outline'}>Login</Button></Link></>
+            isAuthenticated ? <UserDialogButton /> : <><Link to={"/auth/login"}><Button variant={'link'}>Login</Button></Link></>
           )}
           {isMobile && (
             <>
-              {isAuthenticated ? <UserDialogButton /> : <Link to={"/auth/login"}><Button variant={'outline'}>Login</Button></Link>}
+              {isAuthenticated ? <UserDialogButton /> : <Link to={"/auth/login"}><Button variant={'link'}>Login</Button></Link>}
               <Sheet>
                 <SheetTrigger>
                   <Button variant={'outline'} className='p-2'>

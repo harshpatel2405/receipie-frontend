@@ -13,8 +13,8 @@ type CartItem = {
     pid: string;
     productName: string;
     productPhotoUrl: string;
-    productSize: string;
-    productColor: string;
+    // productSize: string;
+    // productColor: string;
     productPrice: number;
     cartCount: number;
 };
